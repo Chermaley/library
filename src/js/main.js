@@ -1,3 +1,9 @@
-import './lib/lib';
+import $ from './lib/lib';
 
-$('.active').toggle();
+$('button').addAtt('cal', 'goven');
+
+$('button').on('click', function() {
+
+    $(this).getAtt('cal', 'goven');
+});
+
