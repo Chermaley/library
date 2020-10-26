@@ -1,13 +1,13 @@
 import $ from './lib/lib';
 
 $('button').on('click', function() {
-    $('div').eq(2).toggleClass('active');
+    $('button').fadeTo(1000, 0.1);
 });
 
-$('div').click(function() {
-    console.log($(this).index());
-});
+// $('div').click(function() {
+//     console.log($(this).index());
+// });
 
-// console.log($('.some').closest('.findme').addClass('sperfm'));
+// // console.log($('.some').closest('.findme').addClass('sperfm'));
 
-console.log($('.more').eq(0).siblings());
+// console.log($('.more').eq(0).siblings());
