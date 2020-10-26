@@ -7,11 +7,17 @@ $.prototype.addAtt = function(attributeName, value){
     return this;
 };
 
-$.prototype.deleteAtte = function(attributeName, value){
+$.prototype.deleteAtt = function(attributeName, value){
     for (let i = 0; i < this.length; i++){
         this[i].removeAttribute(attributeName, value);
     }
     return this;
+};
+
+$.prototype.getAtt = function(attributeName){
+    for (let i = 0; i < this.length; i++){
+        return this[i].getAttribute(attributeName);
+    }
 };
 
 $.prototype.toggleAtt = function(attributeName, value){
