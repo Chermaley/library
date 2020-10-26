@@ -25,3 +25,4 @@ $.prototype.toggleAtt = function(attributeName, value){
     }
     return this;
 };
+
