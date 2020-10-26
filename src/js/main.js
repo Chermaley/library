@@ -1,13 +1,11 @@
 import $ from './lib/lib';
 
-$('button').on('click', function() {
-    $('button').fadeTo(1000, 0.1);
+$('#first').on('click', () => {
+    $('div').eq(1).fadeOut(850);
 });
-
-// $('div').click(function() {
-//     console.log($(this).index());
-// });
-
-// // console.log($('.some').closest('.findme').addClass('sperfm'));
-
-// console.log($('.more').eq(0).siblings());
+$('[data-count="second"]').on('click', () => {
+    $('div').eq(2).fadeOut(850);
+});
+$('button').eq(2).on('click', () => {
+    $('.w-500').fadeOut(850);
+});
