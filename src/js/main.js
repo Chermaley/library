@@ -25,9 +25,16 @@ $('#trigger').click(() => $('#trigger').createModal({
                 ['btn-warning', 'ml-10'],
                 false,
                 () => {
-                    alert('пиздец');
+                    alert('1');
                 }
             ]
         ]
     }
 }));
+
+$('.carousel').carousel({
+    autoplay:true,   //по умолчанию 2 секунды 
+    autoplayTimeout: 1000,
+    hoverPause: true,
+    indicators: true
+});
