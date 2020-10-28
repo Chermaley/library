@@ -92,13 +92,15 @@ $.prototype.carousel = function({hoverPause, autoplayTimeout, autoplay, indicato
                 this[i].addEventListener('mouseenter', () => {
                     clearInterval(interval);
                 });
-                this[i].addEventListener('mouseleave', () => {
-                    auto(autoplayTimeout);
-                });
             }
         };
         if(autoplay){
             auto(autoplayTimeout);
+
+            this[i].addEventListener('mouseleave', () => {
+                auto(autoplayTimeout);
+            });
+            
         }
     }
 };
